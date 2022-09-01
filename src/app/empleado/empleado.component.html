@@ -5,4 +5,10 @@
 <p>Hobiit: {{hobbit}}</p>
 <p>Nombre de la empresa: {{empresa.value}}</p>
 
-<input type="text" #empresa (keyup)="0">
+<input type="text" #empresa (keyup)="0"[disabled]="propertyBiding">
+<br>
+<br>
+<p style="font-weight: bold;">{{textoRegistro}}</p>
+<br>
+Usuario Registrado <input type="radio" name="usuario" value="si" id="registrado" (click)="registroUsuario($event)">
+Usuario No Registrado<input type="radio" name="usuario" value="no" id="registrado" (click)="registroUsuario($event)">

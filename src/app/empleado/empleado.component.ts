@@ -11,6 +11,17 @@ export class EmpleadoComponent implements OnInit {
   apellido = "Reyes Hernandez";
   private edad = 22;
   hobbit = "Caminar";
+  propertyBiding = false;
+  propertyBidingCheck = false;
+  textoRegistro="El usuario no esta registrado";
+
+  registroUsuario(event:Event){
+    if((<HTMLInputElement>event.target).value == "si"){
+      this.textoRegistro="El usuario esta registrado";
+    }else{
+      this.textoRegistro="El usuario no esta registrado";
+    }
+  }
 
   getEdad(){
     return this.edad;
