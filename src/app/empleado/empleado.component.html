@@ -3,9 +3,9 @@
 <p>Apellido: {{apellido}}</p>
 <p>Edad: {{getEdad()>18?"Es mayor de edad":"Es menor de edad"}}</p>
 <p>Hobiit: {{hobbit}}</p>
-<p>Nombre de la empresa: {{empresa.value}}</p>
+<p>Nombre de la empresa: {{empresa}}</p>
 
-<input type="text" #empresa (keyup)="0"[disabled]="propertyBiding">
+<input type="text" [(ngModel)]="empresa">
 <br>
 <br>
 <p style="font-weight: bold;">{{textoRegistro}}</p>

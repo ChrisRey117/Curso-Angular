@@ -11,7 +11,7 @@ export class EmpleadoComponent implements OnInit {
   apellido = "Reyes Hernandez";
   private edad = 22;
   hobbit = "Caminar";
-  propertyBiding = false;
+  empresa = "Google";
   propertyBidingCheck = false;
   textoRegistro="El usuario no esta registrado";
 
